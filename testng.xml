@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="Web Login Testing">
+        <classes>
+            <class name="com.test.demoproject.WebLogin">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Rest Assured API Testing">
+        <classes>
+            <class name="com.test.demoproject.RestAssuredTesting">
+                <methods>
+                    <include name="createUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
